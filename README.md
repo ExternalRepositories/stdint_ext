@@ -1,2 +1,2 @@
 # stdint_ext
-Extensions to the C++ `&lt;cstdint>` header
+Extensions to the C++ `<cstdint>` header
