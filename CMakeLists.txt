@@ -8,3 +8,7 @@ project(stdint_ext
 add_library(stdint_ext INTERFACE)
 target_include_directories(stdint_ext INTERFACE ${PROJECT_SOURCE_DIR}/include)
 target_compile_features(stdint_ext INTERFACE cxx_std_11)
+
+add_executable(stdint_ext_test test.cpp)
+target_link_libraries(stdint_ext_test stdint_ext)
+target_compile_options(stdint_ext_test PRIVATE -pedantic-errors -Wpedantic -Wall -Wextra)
